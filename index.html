@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Share Project</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: 3, 50;
+            grid-template-rows: 2, 50;
+            height: 50%;
+            width: 50%;
+            gap: 5%;
+        }
+
+        .facebook {
+            grid-column: 1;
+            grid-row: 1;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 0;
+        }
+
+        .linkedin {
+            grid-column: 2;
+            grid-row: 1;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 0;
+
+        }
+
+        .twitter {
+            grid-column: 1;
+            grid-row:2;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 0;
+        }
+
+        .pinterest {
+            grid-column: 2;
+            grid-row:2;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 0;
+        }
+        
+        button {
+            border: none;
+            font-size: 48px;
+            color: white;
+            font-weight: bolder;
+            text-align: left;
+        }
+        
+        .button1 {
+            height: 100%;
+            width: 34%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .button2 {
+            height: 100%;
+            width: 66%;
+        }
+        
+        .facebook .button1 {
+    background-color: #1772ab ;
+         }
+
+        .facebook .button2 {
+    background-color: #0174BE ;
+         }
+       
+        .linkedin .button1 {
+    background-color: #0d627e;
+       }
+       .linkedin .button2 {
+    background-color: #176B87;
+       }
+
+       .twitter .button1 {
+    background-color: #0398e3;
+       }
+
+       .twitter .button2 {
+    background-color: #00A9FF;
+       }
+
+       .pinterest .button1 {
+    background-color: #b8042e;
+       }
+
+       .pinterest .button2 {
+    background-color: #D80032;
+       }
+
+       img {
+        height: 50%;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+       }
+
+        @media (max-width: 680px) {
+            div {
+                display: flex;
+                flex-direction: column;
+        }
+
+            button {
+                font-size: 24px;
+            }
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="facebook">
+            <a class="button1" href="https://www.facebook.com/"><img src="./facebook-xxl.png" alt="facebook"></a>
+            <a href="https://www.facebook.com/" class="button2"><button class="button2">Facebook</button></a>
+        </div>
+        <div class="linkedin">
+            <a class="button1" href="https://www.linkedin.com/"><img src="./linkedin-xxl.png" alt="linkedin"></a>
+            <a href="https://www.linkedin.com/" class="button2"><button class="button2">Linkedin</button></a>
+        </div>
+        <div class="twitter">
+            <a href="https://twitter.com/" class="button1"><img src="./twitter-xxl.png" alt="twitter"></a>
+            <a href="https://twitter.com/" class="button2"><button class="button2">Twitter</button></a>
+        </div>
+        <div class="pinterest">
+            <a href="https://www.pinterest.com/" class="button1"><img src="./pinterest-xxl.png" alt="pinterest"></a>
+            <a href="https://www.pinterest.com/" class="button2"><button class="button2">Pinterest</button></a>
+        </div>
+    </div>
+</body>
+</html>
